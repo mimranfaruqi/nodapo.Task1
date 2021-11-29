@@ -29,7 +29,7 @@ namespace NoDapo
                 Books.Add(new Book($"Title {i}",
                     random.Next(200, 400) * 50,
                     random.Next(100, 255),
-                    $"$978-3442{random.Next(100, 700)}747",
+                    $"978-3442{random.Next(100, 700)}747",
                     (Genre) random.Next(1, 4)));
             }
 

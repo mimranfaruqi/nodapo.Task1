@@ -21,6 +21,16 @@ namespace NoDapo.Controllers
         {
             return Ok(_data.Shops.ToList());
         }
+        
+        [HttpGet]
+        public IActionResult Genres()
+        {
+            return Ok(Enum.GetNames<Genre>().Select(x => new
+            {
+                GenreId = x.ToGenre(),
+                Genre = x
+            }));
+        }
 
         [HttpGet("{shopId:guid}")]
         public IActionResult Books([FromRoute] Guid shopId)

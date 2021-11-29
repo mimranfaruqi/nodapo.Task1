@@ -174,5 +174,13 @@ namespace NoDapo.UnitTests
             
             Assert.That(result, Is.TypeOf<OkObjectResult>());
         }
+
+        [Test]
+        public void Genres_WhenCalled_ReturnsOk()
+        {
+            var result = _controller.Genres();
+            
+            Assert.That(result, Is.TypeOf<OkObjectResult>());
+        }
     }
 }
