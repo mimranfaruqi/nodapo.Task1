@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using NoDapo.Domain;
-using NoDapo.Utilities;
+using Nodapo.Domain;
+using Nodapo.Utilities;
 
-namespace NoDapo.Controllers
+namespace Nodapo.Controllers
 {
     [Route("api/[controller]/[action]")]
     public class ShopsController : Controller

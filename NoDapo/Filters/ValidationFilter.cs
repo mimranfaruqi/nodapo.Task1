@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace IncomeTax.Api.Filters
+namespace Nodapo.Filters
 {
     /// <summary>
     /// This is a middleware that filters every request and only validated request get passed. All others are returned

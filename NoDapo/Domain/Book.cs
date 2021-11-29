@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace NoDapo.Domain
+namespace Nodapo.Domain
 {
     public class Book
     {

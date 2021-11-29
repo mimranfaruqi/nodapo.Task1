@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using NoDapo.Controllers;
+using Nodapo.Controllers;
 using NUnit.Framework;
 
-namespace NoDapo.UnitTests
+namespace Nodapo.UnitTests
 {
     [TestFixture]
     public class BuyBook_ShopsControllerTests

@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using NoDapo.Controllers;
-using NoDapo.Domain;
+using Nodapo.Controllers;
+using Nodapo.Domain;
 using NUnit.Framework;
 
-namespace NoDapo.UnitTests
+namespace Nodapo.UnitTests
 {
     [TestFixture]
     public class ShopsControllerTests

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using NoDapo.Domain;
+using Nodapo.Domain;
 
-namespace NoDapo
+namespace Nodapo
 {
     public class Data
     {

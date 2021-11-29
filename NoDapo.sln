@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoDapo", "NoDapo\NoDapo.csproj", "{992436AE-D25F-497E-8067-2CB1DEF06175}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nodapo", "Nodapo\Nodapo.csproj", "{992436AE-D25F-497E-8067-2CB1DEF06175}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoDapo.UnitTests", "NoDapo.UnitTests\NoDapo.UnitTests.csproj", "{D8D27698-D0F9-4193-B18B-B866BEF9DCED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nodapo.UnitTests", "Nodapo.UnitTests\Nodapo.UnitTests.csproj", "{D8D27698-D0F9-4193-B18B-B866BEF9DCED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

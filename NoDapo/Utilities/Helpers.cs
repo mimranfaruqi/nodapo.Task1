@@ -1,6 +1,6 @@
-﻿using NoDapo.Domain;
+﻿using Nodapo.Domain;
 
-namespace NoDapo.Utilities
+namespace Nodapo.Utilities
 {
     public static class Helpers
     {

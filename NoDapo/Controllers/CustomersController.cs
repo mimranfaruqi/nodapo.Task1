@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 
-namespace NoDapo.Controllers
+namespace Nodapo.Controllers
 {
     [Route("api/[controller]/[action]")]
     public class CustomersController : Controller

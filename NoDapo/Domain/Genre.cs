@@ -1,4 +1,4 @@
-﻿namespace NoDapo.Domain
+﻿namespace Nodapo.Domain
 {
     public enum Genre
     {
