@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace NoDapo.Domain
 {
@@ -13,9 +14,13 @@ namespace NoDapo.Domain
         }
 
         public Guid Id { get; set; }
+        
+        [Required]
         public string Name { get; set; }
 
+        [DataType(DataType.Currency)]
         public double Money { get; set; }
+        
         public IList<Book> Books { get; set; }
 
         public Tuple<bool, string> BuyBook(Book book)

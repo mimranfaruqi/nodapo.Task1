@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.FileProviders;
 using NoDapo.Domain;
 using NoDapo.Utilities;
 
@@ -96,11 +95,9 @@ namespace NoDapo.Controllers
         [HttpPost("{shopId:guid}/{copies:int}")]
         public IActionResult AddBook([FromRoute] Guid shopId, [FromBody] Book book, int copies)
         {
-            if (!ModelState.IsValid) return BadRequest(ModelState);
-
             var shop = _data.Shops.FirstOrDefault(s => s.Id == shopId);
 
-            if (shop is null) return BadRequest("Specified shop does not exist.");
+            if (shop is null) return NotFound("Specified shop does not exist.");
 
             for (var i = 0; i < copies; i++)
             {
