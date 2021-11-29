@@ -23,7 +23,7 @@ namespace Nodapo.Domain
         [Required]
         public int NumberOfPages { get; set; }
         
-        [Required, RegularExpression(@"978-([0-9]{10})", ErrorMessage = "ISBN-13 must match the format: 978-3442267747")]
+        [Required]
         public string ISBN13 { get; set; }
         
         [Required, Range(1,4, ErrorMessage = "Invalid Genre selected.")]

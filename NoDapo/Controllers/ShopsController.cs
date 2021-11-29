@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Mvc;
 using Nodapo.Domain;
 using Nodapo.Utilities;
@@ -105,6 +106,8 @@ namespace Nodapo.Controllers
         [HttpPost("{shopId:guid}/{copies:int}")]
         public IActionResult AddBook([FromRoute] Guid shopId, [FromBody] Book book, int copies)
         {
+            if (!Regex.IsMatch(book.ISBN13, "978-([0-9]{10})$")) return BadRequest("ISBN-13 must match the format: 978-3442267747");
+            
             var shop = _data.Shops.FirstOrDefault(s => s.Id == shopId);
 
             if (shop is null) return NotFound("Specified shop does not exist.");

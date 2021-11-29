@@ -153,6 +153,17 @@ namespace Nodapo.UnitTests
         }
 
         [Test]
+        public void AddBook_IncorrectIsbn_ReturnBadRequest()
+        {
+            var shop = _data.Shops.First();
+            var book = new Book("Test title", 25000, 255, "invalid isbn", Genre.Adventure);
+
+            var result = _controller.AddBook(shop.Id, book, 5);
+
+            Assert.That(result, Is.TypeOf<BadRequestObjectResult>());
+        }
+
+        [Test]
         public void AddBook_EverythingIsGood_ReturnsOk()
         {
             var shopId = _data.Shops.First().Id;
