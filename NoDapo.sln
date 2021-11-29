@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoDapo", "NoDapo\NoDapo.csproj", "{992436AE-D25F-497E-8067-2CB1DEF06175}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoDapo.UnitTests", "NoDapo.UnitTests\NoDapo.UnitTests.csproj", "{D8D27698-D0F9-4193-B18B-B866BEF9DCED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{992436AE-D25F-497E-8067-2CB1DEF06175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{992436AE-D25F-497E-8067-2CB1DEF06175}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{992436AE-D25F-497E-8067-2CB1DEF06175}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{992436AE-D25F-497E-8067-2CB1DEF06175}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8D27698-D0F9-4193-B18B-B866BEF9DCED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8D27698-D0F9-4193-B18B-B866BEF9DCED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8D27698-D0F9-4193-B18B-B866BEF9DCED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8D27698-D0F9-4193-B18B-B866BEF9DCED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
